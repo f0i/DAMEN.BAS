@@ -2,14 +2,14 @@
 20  PRINT "  Aufgabe:"
 30  PRINT "      8 Damen sollen so auf einem Schachfeld angeordnet werden,"
 40  PRINT "      dass keine Dame eine Andere schlagen kann"
-50   REM*********************************
-60   REM*** Variable:                 ***
-70   REM***  Shachfeld:               ***
-80   REM***   a  b  c  d  e  f  g  h  ***
-90   REM***                           ***
-100  REM***    Speichern:             ***
-110  REM***      s01 - s92            ***
-120  REM*********************************
+50   REM *********************************
+60   REM *** Variable:                 ***
+70   REM ***  Shachfeld:               ***
+80   REM ***   a  b  c  d  e  f  g  h  ***
+90   REM ***                           ***
+100  REM ***    Speichern:             ***
+110  REM ***      s01 - s92            ***
+120  REM *********************************
 
 1000 REM Startwerte
 1010 a = 1: b = 1: c = 1: d = 1: e = 1: f = 1: g = 1: h = 1: i = 1
@@ -113,7 +113,7 @@
 16180 IF h = f - 2 THEN GOTO 20000
 16190 IF h = g + 1 THEN GOTO 20000
 16200 IF h = g - 1 THEN GOTO 20000
-16210 GOSUB 30000: REM*** Spichern ***
+16210 GOSUB 30000: REM *** Spichern ***
 
 
 20000 REM Programmteil: Nachste M”glichkeit
@@ -160,7 +160,7 @@
 
 28010 END
 
-30000 REM*** Programmteil: Speichern                                                                     
+30000 REM *** Programmteil: Speichern                                                                     
 30010 IF z = 1 THEN s01 = (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000)
 30020 IF z = 2 THEN s02 = (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000)
 30030 IF z = 3 THEN s03 = (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000)
@@ -262,7 +262,7 @@
 30990 IF z = 99 THEN s99 = (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000)
 31000 IF z = 100 THEN s100 = (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000)
 
-31010 PRINT (h) + (g * 10) + (f * 100) + (e * 1000) + (d * 10000) + (c * 100000) + (b * 1000000) + (a * 10000000); "     ";
+31010 PRINT a; b; c; d; e; f; g; h; "     ";
                                                                                                                          
 31020 RETURN
 
